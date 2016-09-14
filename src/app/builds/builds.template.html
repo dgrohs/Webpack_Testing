@@ -1,6 +1,6 @@
 <h2>Recent Builds</h2>
 <ul class="builds">
-<li *ngFor="let build of builds">
-  <span class="badge">{{build.name}}</span>   Successful:{{build.succ}}    Name:{{build.id}}   Duration:{{build.duration}}h
+<li *ngFor="let build of builds" [class.succ]="build.succ == true">
+  <span class="badge">{{build.name}}</span><span class="id">#{{build.id}}</span>   <span class="duration">Duration:{{build.duration }}h</span> <span class="failed">Failed:{{build.scenNrFailed}}/{{build.scenNr}}</span>
 </li>
 </ul>
