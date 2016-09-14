@@ -1,5 +1,5 @@
 import { Build } from './build';
-import { BUILDS } from './mock-data';
+import { BUILDS } from '../mock-data';
 import { Injectable } from '@angular/core';
 
 @Injectable()

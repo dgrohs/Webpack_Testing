@@ -4,7 +4,7 @@ import { About } from './about';
 import { NoContent } from './no-content';
 
 import { DataResolver } from './app.resolver';
-import { BuildComponent } from './builds.component';
+import { BuildComponent } from './builds/builds.component';
 
 
 export const ROUTES: Routes = [

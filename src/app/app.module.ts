@@ -13,7 +13,7 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { App } from './app.component';
 import { MdModule } from './md.module';
-import { BuildService } from './build.service';
+import { BuildService } from './builds/build.service';
 
 /**
  * Additional Meterial2 providers
@@ -27,7 +27,7 @@ import { AppState } from './app.service';
 import { Home } from './home';
 import { About } from './about';
 import { NoContent } from './no-content';
-import { BuildComponent } from './builds.component';
+import { BuildComponent } from './builds/builds.component';
 
 // Import diretives
 import { XLarge } from './home/x-large';

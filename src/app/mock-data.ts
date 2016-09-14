@@ -1,4 +1,4 @@
-import { Build } from './build';
+import { Build } from './builds/build';
 export var BUILDS: Build[] = [
   {id:10 ,name: 'Test10',succ: true,duration: 120,scenNr: 500,scenNrFailed: 0},
   {id:11 ,name: 'Test11',succ: true,duration: 2,scenNr: 500,scenNrFailed: 0},
