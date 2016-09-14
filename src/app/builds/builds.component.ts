@@ -6,12 +6,8 @@ import { BuildService } from './build.service';
 
 @Component ({
   selector: 'build-list',
-  template: `<h2>Recent Builds</h2>
-<ul class="builds">
-  <li *ngFor="let build of builds">
-    <md-card><span class="badge">ID:{{build.id}}</span>   Successful:{{build.succ}}    Name:{{build.name}}   Duration:{{build.duration}}h</md-card>
-  </li>
-</ul>`
+  templateUrl: './builds.template.html',
+  styleUrls: ['./builds.style.css']
 
 })
 export class BuildComponent implements OnInit {

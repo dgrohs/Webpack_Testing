@@ -19,6 +19,26 @@ import { AppState } from './app.service';
   <md-sidenav-layout fullscreen>
   <md-sidenav #start (open)="mybutton.focus()" mode="push">
     Start Sidenav.
+    <br><br>
+    <a md-button [routerLink]=" ['./builds'] ">
+      Builds
+    </a>
+    <br>
+    <a md-button [routerLink]=" ['./'] ">
+      Index
+    </a>
+    <br>
+    <a md-button [routerLink]=" ['./home'] ">
+      Home
+    </a>
+    <br>
+    <a md-button [routerLink]=" ['./detail'] ">
+      Detail
+    </a>
+    <br>
+    <a md-button [routerLink]=" ['./about'] ">
+      About
+    </a>
     <br>
     <button md-button #mybutton (click)="start.close()">Close</button>
   </md-sidenav>
@@ -35,21 +55,7 @@ import { AppState } from './app.service';
         </md-button>
         <span>{{ name }}</span>
         <span class="fill"></span>
-        <a md-button [routerLink]=" ['./'] ">
-          Index
-        </a>
-        <a md-button [routerLink]=" ['./home'] ">
-          Home
-        </a>
-        <a md-button [routerLink]=" ['./detail'] ">
-          Detail
-        </a>
-        <a md-button [routerLink]=" ['./about'] ">
-          About
-        </a>
-        <a md-button [routerLink]=" ['./builds'] ">
-          Builds
-        </a>
+
     </md-toolbar>
 
     <md-progress-bar mode="indeterminate" color="primary" *ngIf="loading"></md-progress-bar>
