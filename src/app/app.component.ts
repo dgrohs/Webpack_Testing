@@ -67,8 +67,7 @@ import { AppState } from './app.service';
     <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
 
     <footer>
-      <span id="footerText">WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
-      <img [src]="angularclassLogo" width="6%">
+      <p>Footer app.component.ts</p>
     </footer>
   </md-content>
 </md-sidenav-layout>
@@ -80,6 +79,7 @@ export class App {
   loading = false;
   name = 'Angular 2 Webpack Starter';
   url = 'https://twitter.com/AngularClass';
+  
 
   constructor(
     public appState: AppState) {

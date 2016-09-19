@@ -1,72 +1,26 @@
-.selected {
-  background-color: #CFD8DC !important;
-  color: white;
+.btn-succ {
+  display: inline;
 }
-.builds{
-  margin: 0 0 2em 0;
-  list-style-type: none;
-  padding: 0;
-  width: 100%;
+.info {
+  float: right;
+  display: inline;
+  margin-right: 15px;
 }
-.builds li {
-  cursor: pointer;
+.details {
+  float:left;
+}
+md-card-title {
+  font-weight: bold;
+  font-size: 2em;
   position: relative;
-  left: 0;
-  background-color: #EEE;
-  margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
-  border-radius: 4px;
+  left: 50px;
+  top: -30px;
 }
-.builds li:hover {
-  color: #607D8B;
-  background-color: #DDD;
-  left: .1em;
+md-card-content {
+  margin-top: 15px;
 }
-.builds li.selected:hover {
-  background-color: #BBD8DC !important;
-  color: white;
-}
-.builds.text {
-  position: relative;
-  top: -3px;
-}
-.builds .badge {
-  display: inline-block;
-  font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: red;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
-}
-.builds .succ .badge {
-  background-color: green;
-}
-.builds .id {
-  margin-right: 3em;
-}
-.builds .failed {
-  padding-left: 10px;
-  width: 15em;
-}
-.builds .duration {
-  padding-right: 10px;
-}
-button {
-  font-family: Arial;
-  background-color: #eee;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  cursor: hand;
-}
-button:hover {
-  background-color: #cfd8dc;
+.builds {
+  width: 75%;
+  height: 100px;
+  text-align: left;
 }

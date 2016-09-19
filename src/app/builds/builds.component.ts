@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 import { Build } from './build';
 import { BuildService } from './build.service';
+import { AppState } from '../app.service';
 
 @Component ({
   selector: 'build-list',
@@ -12,8 +13,10 @@ import { BuildService } from './build.service';
 })
 export class BuildComponent implements OnInit {
   builds: Build[];
+  selectedBuild: Build;
 
   constructor(
+    public appState: AppState,
     private buildService: BuildService
   ) { }
 
@@ -23,5 +26,10 @@ export class BuildComponent implements OnInit {
 
   ngOnInit(): void {
     this.getBuilds();
+  }
+
+  onSelect(build: Build): void {
+    this.selectedBuild = build;
+    this.appState.set('BuildId', this.selectedBuild.id);
   }
 }

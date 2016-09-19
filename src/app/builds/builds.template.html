@@ -1,6 +1,15 @@
-<h2>Recent Builds</h2>
-<ul class="builds">
-<li *ngFor="let build of builds" [class.succ]="build.succ == true">
-  <span class="badge">{{build.name}}</span><span class="id">#{{build.id}}</span>   <span class="duration">Duration:{{build.duration }}h</span> <span class="failed">Failed:{{build.scenNrFailed}}/{{build.scenNr}}</span>
-</li>
-</ul>
+<h2>Recent Tests</h2>
+<button class="builds" *ngFor="let build of builds" (click)="onSelect(build)">
+  <md-card-content>
+    <!-- ngIf entscheidet welcher Buttontyp eingebelndet werden soll -->
+    <button class="btn-succ" md-mini-fab *ngIf="build.succ == true" color="primary">
+      <md-icon>done</md-icon>
+    </button>
+    <button class="btn-succ" md-mini-fab *ngIf="build.succ == false" color="warn">
+      <md-icon>report</md-icon>
+    </button>
+    <md-card-title>{{build.name}}</md-card-title>
+    <p class="info">Duration: {{build.duration }}h</p>
+    <p class="info">Failed: {{build.scenNrFailed}}/{{build.scenNr}}</p>
+  </md-card-content>
+</button>

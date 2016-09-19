@@ -5,6 +5,7 @@ import { NoContent } from './no-content';
 
 import { DataResolver } from './app.resolver';
 import { BuildComponent } from './builds/builds.component';
+import { FeatureComponent } from './features/features.component';
 
 
 export const ROUTES: Routes = [
@@ -12,6 +13,7 @@ export const ROUTES: Routes = [
   { path: 'home',  component: Home },
   { path: 'about', component: About },
   { path: 'builds', component: BuildComponent },
+  { path: 'features', component: FeatureComponent },
   {
     path: 'detail', loadChildren: () => System.import('./+detail')
   },
