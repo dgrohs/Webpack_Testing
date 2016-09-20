@@ -23,9 +23,7 @@ import { AppState } from './app.service';
     <a md-button [routerLink]=" ['./builds'] ">
       Builds
     </a>
-    <a md-button [routerLink]=" ['./features'] ">
-      Features
-    </a>
+
     <br>
     <a md-button [routerLink]=" ['./'] ">
       Index

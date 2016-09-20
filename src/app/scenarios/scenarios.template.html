@@ -1,0 +1,15 @@
+<h2>Recent Tests</h2>
+<button class="builds" *ngFor="let feat of features" (click)="onSelect(feat)">
+  <md-card-content>
+    <!-- ngIf entscheidet welcher Buttontyp eingebelndet werden soll -->
+    <button class="btn-succ" md-mini-fab *ngIf="feat.succ == true" color="primary">
+      <md-icon>done</md-icon>
+    </button>
+    <button class="btn-succ" md-mini-fab *ngIf="feat.succ == false" color="warn">
+      <md-icon>report</md-icon>
+    </button>
+    <md-card-title>{{feat.name}}</md-card-title>
+    <p class="info">Duration: {{feat.duration }}h</p>
+    <p class="info">Failed: {{feat.scenNrFailed}}/{{feat.scenNr}}</p>
+  </md-card-content>
+</button>

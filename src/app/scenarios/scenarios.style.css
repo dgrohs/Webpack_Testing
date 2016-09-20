@@ -1,0 +1,26 @@
+.btn-succ {
+  display: inline;
+}
+.info {
+  float: right;
+  display: inline;
+  margin-right: 15px;
+}
+.details {
+  float:left;
+}
+md-card-title {
+  font-weight: bold;
+  font-size: 2em;
+  position: relative;
+  left: 50px;
+  top: -30px;
+}
+md-card-content {
+  margin-top: 15px;
+}
+.builds {
+  width: 75%;
+  height: 100px;
+  text-align: left;
+}
