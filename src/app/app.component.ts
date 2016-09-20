@@ -23,6 +23,9 @@ import { AppState } from './app.service';
     <a md-button [routerLink]=" ['./builds'] ">
       Builds
     </a>
+    <a md-button [routerLink]=" ['./features'] ">
+      Features
+    </a>
     <br>
     <a md-button [routerLink]=" ['./'] ">
       Index
@@ -79,7 +82,7 @@ export class App {
   loading = false;
   name = 'Angular 2 Webpack Starter';
   url = 'https://twitter.com/AngularClass';
-  
+
 
   constructor(
     public appState: AppState) {

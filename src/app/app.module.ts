@@ -14,6 +14,7 @@ import { ROUTES } from './app.routes';
 import { App } from './app.component';
 import { MdModule } from './md.module';
 import { BuildService } from './builds/build.service';
+import { FeatureService } from './features/features.service';
 
 /**
  * Additional Meterial2 providers
@@ -28,6 +29,7 @@ import { Home } from './home';
 import { About } from './about';
 import { NoContent } from './no-content';
 import { BuildComponent } from './builds/builds.component';
+import { FeatureComponent } from './features/features.component';
 
 // Import diretives
 import { XLarge } from './home/x-large';
@@ -48,6 +50,7 @@ const APP_PROVIDERS = [
     About,
     Home,
     BuildComponent,
+    FeatureComponent,
     NoContent,
     XLarge
   ],
@@ -63,7 +66,8 @@ const APP_PROVIDERS = [
     APP_PROVIDERS,
     MdIconRegistry,
     OVERLAY_PROVIDERS,
-    BuildService
+    BuildService,
+    FeatureService
   ]
 })
 export class AppModule {
