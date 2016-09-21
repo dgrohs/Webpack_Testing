@@ -8,7 +8,7 @@ export var BUILDS: Build[] = [
 ]
 
 export var FEATURES: Feat[] = [
-      {buildId: 10, id:11 ,name: 'Feature AAA',succ: true,   duration: 120,  scenNr: 10,scenNrFailed: 0},
+      {buildId: 10, id:11 ,name: 'Feature AAA',succ: false,   duration: 120,  scenNr: 10,scenNrFailed: 0},
       {buildId: 10, id:12 ,name: 'Feature VVV',succ: true,   duration: 60,   scenNr: 10,scenNrFailed: 0},
       {buildId: 10, id:13 ,name: 'Feature SSS',succ: true,   duration: 30,   scenNr: 10,scenNrFailed: 0},
       {buildId: 10, id:14 ,name: 'Feature DDD',succ: false,  duration: 10,   scenNr: 10,scenNrFailed: 8},
@@ -21,10 +21,10 @@ export var FEATURES: Feat[] = [
 ]
 
 export var SCENARIOS: Scen[] = [
-      {featId: 11, id:111 ,name: 'Scenario AAA',succ: true,   duration: 120,  scenNr: 10,scenNrFailed: 0},
+      {featId: 11, id:111 ,name: 'Scenario AAA',succ: false,   duration: 120,  scenNr: 10,scenNrFailed: 0},
       {featId: 11, id:112 ,name: 'Scenario VVV',succ: true,   duration: 60,   scenNr: 10,scenNrFailed: 0},
-      {featId: 11, id:113 ,name: 'Scenario SSS',succ: true,   duration: 30,   scenNr: 10,scenNrFailed: 0},
-      {featId: 11, id:114 ,name: 'Scenario DDD',succ: false,  duration: 10,   scenNr: 10,scenNrFailed: 8},
+      {featId: 11, id:113 ,name: 'Scenario SSS',succ: false,   duration: 30,   scenNr: 10,scenNrFailed: 0},
+      {featId: 11, id:114 ,name: 'Scenario DDD',succ: true,  duration: 10,   scenNr: 10,scenNrFailed: 8},
       {featId: 11, id:115 ,name: 'Scenario FFF',succ: false,  duration: 2,    scenNr: 10,scenNrFailed: 9},
       {featId: 21, id:211 ,name: 'Scenario XXX',succ: true,   duration: 120,  scenNr: 10,scenNrFailed: 0},
       {featId: 21, id:212 ,name: 'Scenario YYY',succ: true,   duration: 60,   scenNr: 10,scenNrFailed: 0},
@@ -34,16 +34,16 @@ export var SCENARIOS: Scen[] = [
 ]
 
 export var STEPS: Step[] = [
-      {scenId: 111, id: 1111, name: 'Step 1', succ: true, },
-      {scenId: 111, id: 1112, name: 'Step 2', succ: true, },
-      {scenId: 111, id: 1113, name: 'Step 3', succ: true, },
-      {scenId: 111, id: 1114, name: 'Step 4', succ: true, },
-      {scenId: 111, id: 1115, name: 'Step 5', succ: true, },
-      {scenId: 111, id: 1116, name: 'Step 6', succ: true, },
-      {scenId: 111, id: 1117, name: 'Step 7', succ: true, },
-      {scenId: 111, id: 1118, name: 'Step 8', succ: true, },
-      {scenId: 111, id: 1119, name: 'Step 9', succ: true, },
-      {scenId: 121, id: 1211, name: 'Step 10', succ: true, },
-      {scenId: 121, id: 1212, name: 'Step 11', succ: true, },
-      {scenId: 121, id: 1213, name: 'Step 12', succ: true, }
+      {scenId: 211, id: 2111, name: 'Step 1', succ: true, },
+      {scenId: 211, id: 2112, name: 'Step 2', succ: true, },
+      {scenId: 211, id: 2113, name: 'Step 3', succ: true, },
+      {scenId: 211, id: 2114, name: 'Step 4', succ: true, },
+      {scenId: 211, id: 2115, name: 'Step 5', succ: true, },
+      {scenId: 211, id: 2116, name: 'Step 6', succ: true, },
+      {scenId: 211, id: 2117, name: 'Step 7', succ: true, },
+      {scenId: 211, id: 2118, name: 'Step 8', succ: true, },
+      {scenId: 211, id: 2119, name: 'Step 9', succ: true, },
+      {scenId: 111, id: 1111, name: 'Step 10', succ: false, },
+      {scenId: 111, id: 1112, name: 'Step 11', succ: false, },
+      {scenId: 111, id: 1113, name: 'Step 12', succ: false, }
 ]

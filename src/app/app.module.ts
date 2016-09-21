@@ -15,7 +15,8 @@ import { App } from './app.component';
 import { MdModule } from './md.module';
 import { BuildService } from './builds/build.service';
 import { FeatureService } from './features/features.service';
-import { ScenarioService } from './scenarios/scenarios.service.ts'
+import { ScenarioService } from './scenarios/scenarios.service.ts';
+import { StepService } from './steps/steps.service.ts';
 
 /**
  * Additional Meterial2 providers
@@ -32,6 +33,7 @@ import { NoContent } from './no-content';
 import { BuildComponent } from './builds/builds.component';
 import { FeatureComponent } from './features/features.component';
 import { ScenarioComponent } from './scenarios/scenarios.component';
+import { StepsComponent } from './steps/steps.component';
 
 // Import diretives
 import { XLarge } from './home/x-large';
@@ -54,6 +56,7 @@ const APP_PROVIDERS = [
     BuildComponent,
     FeatureComponent,
     ScenarioComponent,
+    StepsComponent,
     NoContent,
     XLarge
   ],
@@ -71,7 +74,8 @@ const APP_PROVIDERS = [
     OVERLAY_PROVIDERS,
     BuildService,
     FeatureService,
-    ScenarioService
+    ScenarioService,
+    StepService
   ]
 })
 export class AppModule {

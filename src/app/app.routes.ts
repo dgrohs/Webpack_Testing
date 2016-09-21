@@ -7,6 +7,7 @@ import { DataResolver } from './app.resolver';
 import { BuildComponent } from './builds/builds.component';
 import { FeatureComponent } from './features/features.component';
 import { ScenarioComponent } from './scenarios/scenarios.component';
+import { StepsComponent } from './steps/steps.component';
 
 
 export const ROUTES: Routes = [
@@ -16,6 +17,7 @@ export const ROUTES: Routes = [
   { path: 'builds', component: BuildComponent },
   { path: 'features', component: FeatureComponent },
   { path: 'scenarios', component: ScenarioComponent},
+  { path: 'steps', component: StepsComponent},
   {
     path: 'detail', loadChildren: () => System.import('./+detail')
   },

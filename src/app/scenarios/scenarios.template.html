@@ -1,5 +1,5 @@
 <h2>Recent Scenarios</h2>
-<button class="builds" *ngFor="let scen of scenarios" (click)="onSelect(scen)">
+<button class="builds" *ngFor="let scen of scenarios" (click)="onSelect(scen)" [routerLink] = "[ '../steps' ]">
   <md-card-content>
     <!-- ngIf entscheidet welcher Buttontyp eingebelndet werden soll -->
     <button class="btn-succ" md-mini-fab *ngIf="scen.succ == true" color="primary">
@@ -13,3 +13,7 @@
     <p class="info">Failed: {{scen.scenNrFailed}}/{{scen.scenNr}}</p>
   </md-card-content>
 </button>
+<div>
+  <button [routerLink] = "[ '../builds' ]">Builds</button>
+  <button [routerLink] = "[ '../features' ]">Zurück</button>
+</div>
