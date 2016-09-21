@@ -1,0 +1,13 @@
+<h2>Recent Steps</h2>
+<button class="builds" *ngFor="let step of steps" (click)="onSelect(step)">
+  <md-card-content>
+    <!-- ngIf entscheidet welcher Buttontyp eingebelndet werden soll -->
+    <button class="btn-succ" md-mini-fab *ngIf="step.succ == true" color="primary">
+      <md-icon>done</md-icon>
+    </button>
+    <button class="btn-succ" md-mini-fab *ngIf="step.succ == false" color="warn">
+      <md-icon>report</md-icon>
+    </button>
+    <md-card-title>{{step.name}}</md-card-title>
+  </md-card-content>
+</button>

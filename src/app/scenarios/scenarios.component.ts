@@ -20,17 +20,17 @@ export class ScenarioComponent {
     private scenarioService: ScenarioService
   ) { }
 
-  getFeatures ():void {
-    this.scenarioService.getFeature(this.appState.get("BuildId")).then(features => this.scenarios = features);
+  getScenarios():void {
+    this.scenarioService.getScenario(this.appState.get("FeatId")).then(scenarios => this.scenarios = scenarios);
   }
 
   ngOnInit(): void {
-    this.getFeatures();
+    this.getScenarios();
   }
 
-  onSelect(feature: Scen): void {
-    this.selectedScenario = feature;
-    this.appState.set('ScendId', this.selectedScenario.id);
+  onSelect(scenario: Scen): void {
+    this.selectedScenario = scenario;
+    this.appState.set('ScenId', this.selectedScenario.id);
 
   }
 }

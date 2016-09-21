@@ -5,12 +5,12 @@ import { AppState } from '../app.service';
 
 @Injectable()
 export class ScenarioService {
-  getFeatures(): Promise<Scen[]> {
+  getScenarios(): Promise<Scen[]> {
     return Promise.resolve(SCENARIOS);
   }
 
-  getFeature(id: number): Promise<Scen[]> {
-    return this.getFeatures()
+  getScenario(id: number): Promise<Scen[]> {
+    return this.getScenarios()
                 .then(scenarios => scenarios.filter(scenario => scenario.featId === id));
 
   }

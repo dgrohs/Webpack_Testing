@@ -1,5 +1,5 @@
 <h2>Recent Tests</h2>
-<button class="builds" *ngFor="let feat of features" (click)="onSelect(feat)">
+<button class="builds" *ngFor="let feat of features" (click)="onSelect(feat)" [routerLink]= " [ '../scenarios' ] ">
   <md-card-content>
     <!-- ngIf entscheidet welcher Buttontyp eingebelndet werden soll -->
     <button class="btn-succ" md-mini-fab *ngIf="feat.succ == true" color="primary">
